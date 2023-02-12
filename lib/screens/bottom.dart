@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:fluentui_icons/fluentui_icons.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
+import 'home.dart';
 
 class BottomBar extends StatefulWidget {
   const BottomBar({super.key});
@@ -13,7 +12,7 @@ class BottomBar extends StatefulWidget {
 class _BottomBarState extends State<BottomBar> {
   int _selectedItemIndex = 0;
   static final List<Widget> _widgetOptions = <Widget>[
-    const Text("Home"),
+    Home(),
     const Text("Search"),
     const Text("Tickets"),
     const Text("Profile")
