@@ -12,7 +12,7 @@ class BottomBar extends StatefulWidget {
 class _BottomBarState extends State<BottomBar> {
   int _selectedItemIndex = 0;
   static final List<Widget> _widgetOptions = <Widget>[
-    Home(),
+    const Home(),
     const Text("Search"),
     const Text("Tickets"),
     const Text("Profile")
@@ -26,9 +26,6 @@ class _BottomBarState extends State<BottomBar> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('YooTicket'),
-      ),
       body: Center(
         child: _widgetOptions[_selectedItemIndex],
       ),
